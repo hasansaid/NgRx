@@ -33,5 +33,6 @@ export class HomePageComponent implements OnInit {
     basket.product = product;
     basket.quantity = 1;
     this.store.dispatch({ type: '[Baskets] Add Count', basket: IBasket });
+    console.log(basket);
   }
 }

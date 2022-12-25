@@ -1,4 +1,4 @@
-import { countIncrement } from './../acitons/counter.action';
+import { countDecrement, countIncrement } from './../acitons/counter.action';
 // where states are ruled (durumların yönetildiği yer)
 
 import { createReducer, on } from '@ngrx/store';
@@ -7,5 +7,6 @@ export const initialCount = 0;
 
 export const CounterReducer = createReducer(
   initialCount,
-  on(countIncrement, (state) => state + 1)
+  on(countIncrement, (state) => state + 1),
+  on(countDecrement, (state) => state - 1)
 );

@@ -12,9 +12,9 @@ export class NavbarComponent implements OnInit {
   basketCount$ = 0;
   baskets$: IBasket[] = [];
   constructor(private store: Store<{ baskets: IBasket[] }>) {
-    this.store.select('baskets').subscribe((res) => {
-      this.basketCount$ = res.length;
-      this.baskets$ = res;
+    this.store.select('baskets').subscribe((a) => {
+      this.basketCount$ = a.length;
+      this.baskets$ = a;
     });
   }
 
