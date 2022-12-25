@@ -1,9 +1,12 @@
-<h1>Add Count Component</h1>
-<button class="me-2 shadow" (click)="addCount()">Count Add</button>
-<button class="me-2 shadow" (click)="deleteCount()">Count Delete</button>
-<button class="me-2 shadow" (click)="resetCount()">Count Reset</button>
-<button class="me-2 shadow" (click)="sendedMessage()">Send Message</button>
-<br>
-count:{{count}}
-<br>
-Message: {{message}}
+<div>
+    <h1 class="m-5">Add Count Component</h1>
+    <div class="m-5">
+        <button class="btn btn-success me-2 shadow" (click)="addCount()">Count Add</button>
+        <button class="btn btn-warning me-2 shadow" (click)="deleteCount()">Count Decrease</button>
+        <button class="btn btn-danger me-2 shadow" (click)="resetCount()">Count Reset</button>
+        <button class="btn btn-primary me-2 shadow" (click)="sendedMessage()">Send Message</button>
+
+        <div class="mt-2">Count:{{count}}</div>
+        <div class="mt-2">Message: {{message}}</div>
+    </div>
+</div>
