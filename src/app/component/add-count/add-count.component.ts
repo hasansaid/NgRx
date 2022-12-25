@@ -7,8 +7,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AddCountComponent implements OnInit {
   count: number = 0;
+  message: string = 'My name is Hasan Said. -Send me...-';
 
-  @Output() myEvent = new EventEmitter<any>();
+  @Output() sendMessage = new EventEmitter<string>();
+  @Output() myEvent = new EventEmitter<number>();
   constructor() {}
 
   ngOnInit(): void {}
@@ -26,5 +28,10 @@ export class AddCountComponent implements OnInit {
   resetCount() {
     this.count = 0;
     this.myEvent.emit(this.count);
+  }
+
+  sendedMessage() {
+    this.message = 'My name is Hasan Said. -I was sent..-';
+    this.sendMessage.emit(this.message);
   }
 }

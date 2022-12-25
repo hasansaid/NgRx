@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CountComponent implements OnInit {
   @Input() count: number = 0;
+  @Input() message: string = '';
   constructor() {}
 
   ngOnInit(): void {}

@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   count: number = 0;
+  message: string;
   addCount(event: number) {
     this.count = event;
+  }
+  send(event: string) {
+    this.message = event;
   }
 }

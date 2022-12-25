@@ -1,5 +1,5 @@
-<app-add-count (myEvent)="addCount($event)"></app-add-count>
+<app-add-count (myEvent)="addCount($event)" (sendMessage)="send($event)"></app-add-count>
 <hr>
-<app-count [count]="count"></app-count>
+<app-count [count]="count" [message]="message"></app-count>
 
 <router-outlet></router-outlet>
