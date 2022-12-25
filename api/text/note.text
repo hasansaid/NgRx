@@ -1,0 +1,2 @@
+=> İlk olarak ngrx'i ekleyelim. 
+npm i @ngrx/store@14.3.2 , sürüme göre @14.3.2 kısmı değişir.
