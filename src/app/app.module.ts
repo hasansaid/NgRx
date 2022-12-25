@@ -1,3 +1,4 @@
+import { BasketsReducer } from './store/reducer/baskets.reducer';
 import { CounterReducer } from './store/reducer/counter.reducer';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -33,7 +34,7 @@ import { MainPageComponent } from './component/ngrx/main-page/main-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ number: CounterReducer }),
+    StoreModule.forRoot({ basketCount: BasketsReducer }),
   ],
   providers: [],
   bootstrap: [AppComponent],

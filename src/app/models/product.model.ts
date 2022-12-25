@@ -1,6 +1,6 @@
 export class IProduct {
   id: number = 0;
-  name: any = '';
+  name: string = '';
   unitPrice: number = 0;
   stock: number = 100;
 }

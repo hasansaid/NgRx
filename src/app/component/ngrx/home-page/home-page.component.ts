@@ -1,3 +1,4 @@
+import { Store } from '@ngrx/store';
 import { IProduct } from './../../../models/product.model';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   products: IProduct[] = [];
-  constructor() {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.setProducts();
@@ -24,5 +25,9 @@ export class HomePageComponent implements OnInit {
 
       this.products.push(product);
     }
+  }
+
+  addBasket() {
+    this.store.dispatch({ type: '[Baskets] Add Count' });
   }
 }

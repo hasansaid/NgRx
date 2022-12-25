@@ -12,7 +12,12 @@
         <li>
             <a>
                 Basket
-                <span class="badge bg-danger">0</span>
+                <span class="badge bg-danger">{{basketCount$|async}}</span>
+            </a>
+        </li>
+        <li routerLink="">
+            <a>
+                Back To Menu
             </a>
         </li>
     </ul>
