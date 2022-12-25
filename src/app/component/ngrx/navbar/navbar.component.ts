@@ -1,3 +1,4 @@
+import { IBasket } from 'src/app/models/basket.model';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
@@ -8,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  basketCount$ = this.store.select('basketCount');
-  constructor(private store: Store<{ basketCount: number }>) {}
+  basketCount$ = 0;
+  baskets$: IBasket[] = [];
+  constructor(private store: Store<{ baskets: IBasket[] }>) {
+    this.store.select('baskets').subscribe((res) => {
+      this.basketCount$ = res.length;
+      this.baskets$ = res;
+    });
+  }
 
   ngOnInit(): void {}
 }

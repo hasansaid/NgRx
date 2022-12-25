@@ -34,7 +34,7 @@ import { MainPageComponent } from './component/ngrx/main-page/main-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ basketCount: BasketsReducer }),
+    StoreModule.forRoot({ baskets: BasketsReducer }),
   ],
   providers: [],
   bootstrap: [AppComponent],
