@@ -1,3 +1,4 @@
+import { CountService } from './../../services/count.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CountComponent implements OnInit {
   @Input() count: number = 0;
   @Input() message: string = '';
-  constructor() {}
+  constructor(public countService: CountService) {}
 
   ngOnInit(): void {}
 }
