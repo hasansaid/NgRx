@@ -3,9 +3,9 @@
     <div class="row">
         <button routerLink="" class="btn btn-success ">
             Back To Menu
-        </button> <br>
-        <h1 class="ms-5 mt-3 " style="text-align: center; color: red;">Add Count Component</h1>
+        </button>
     </div>
+    <h1 class="ms-5 mt-3 " style="text-align: center; color: red;">Count Control Component</h1>
     <div class="row">
         <div class="col-md-6">
             <h1 class="m-5">Input Output</h1>
@@ -15,7 +15,7 @@
                 <button class="btn btn-danger me-2 shadow" (click)="resetCount()">Count Reset</button>
                 <button class="btn btn-primary me-2 shadow" (click)="sendedMessage()">Send Message</button>
 
-                <div class="mt-2">Count:{{count}}</div>
+                <!-- <div class="mt-2">Count:{{count}}</div> -->
                 <div class="mt-2">Message: {{message}}</div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 <button class="btn btn-warning me-2 shadow" (click)="deleteSCount()">Count Decrease</button>
                 <button class="btn btn-danger me-2 shadow" (click)="resetSCount()">Count Reset</button>
                 <button class="btn btn-primary me-2 shadow" (click)="sendedSMessage()">Send Message</button>
-                <div class="mt-2">Count:{{countService.count}}</div>
+                <!-- <div class="mt-2">Count:{{countService.count}}</div> -->
                 <div class="mt-2">Message: {{countService.message}}</div>
             </div>
         </div>
