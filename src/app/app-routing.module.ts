@@ -1,3 +1,5 @@
+import { MainPageComponent } from './component/ngrx/main-page/main-page.component';
+import { HomePageComponent } from './component/ngrx/home-page/home-page.component';
 import { MainNumberComponent } from './component/ngrx/main-number/main-number.component';
 import { MainCountComponent } from './component/main-count/main-count.component';
 import { NgModule } from '@angular/core';
@@ -10,7 +12,14 @@ const routes: Routes = [
     path: 'others-page',
     component: MainCountComponent,
   },
-  { path: 'ngrx-page', component: MainNumberComponent },
+  {
+    path: 'ngrx-page',
+    component: MainPageComponent,
+    children: [
+      { path: '', component: HomePageComponent },
+      { path: 'home-page', component: HomePageComponent },
+    ],
+  },
 ];
 
 @NgModule({

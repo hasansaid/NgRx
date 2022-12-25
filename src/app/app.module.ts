@@ -12,6 +12,9 @@ import { SelectComponent } from './component/select/select.component';
 import { NumberControlComponent } from './component/ngrx/number-control/number-control.component';
 import { NumberComponent } from './component/ngrx/number/number.component';
 import { MainNumberComponent } from './component/ngrx/main-number/main-number.component';
+import { HomePageComponent } from './component/ngrx/home-page/home-page.component';
+import { NavbarComponent } from './component/ngrx/navbar/navbar.component';
+import { MainPageComponent } from './component/ngrx/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { MainNumberComponent } from './component/ngrx/main-number/main-number.co
     NumberControlComponent,
     NumberComponent,
     MainNumberComponent,
+    HomePageComponent,
+    NavbarComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
