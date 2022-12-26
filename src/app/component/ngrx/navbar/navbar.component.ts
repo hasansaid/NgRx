@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   constructor(private store: Store<{ baskets: IBasket[] }>) {
     this.store.select('baskets').subscribe((a) => {
       this.basketCount$ = a.length;
-      console.log(a[2]);
+      console.log(a);
       this.baskets$ = a;
     });
   }

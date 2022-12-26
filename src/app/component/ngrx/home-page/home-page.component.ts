@@ -2,7 +2,7 @@ import { IBasket } from './../../../models/basket.model';
 import { Store } from '@ngrx/store';
 import { IProduct } from './../../../models/product.model';
 import { Component, OnInit } from '@angular/core';
-
+import * as BasketAction from '../../../store/acitons/basket.action';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -32,7 +32,6 @@ export class HomePageComponent implements OnInit {
     let basket = new IBasket();
     basket.product = product;
     basket.quantity = 1;
-    this.store.dispatch({ type: '[Baskets] Add Count', basket: basket });
-    console.log(basket);
+    this.store.dispatch(BasketAction.AddBasket({ basket: basket }));
   }
 }

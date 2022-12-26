@@ -45,7 +45,8 @@
                         <span class="badge bg-danger">{{basketCount$}}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" *ngFor="let basket$ of baskets$">{{basket$.product.name}}</a>
+                        <li><a class="dropdown-item" *ngFor="let basket$ of baskets$">{{basket$.product.name}}-Adet:
+                                {{basket$.quantity}}</a>
                         </li>
                         <li>
                             <!-- <hr class="dropdown-divider">
