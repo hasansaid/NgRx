@@ -11,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   basketCount$ = 0;
   baskets$: IBasket[] = [];
+  extra$: Observable<IBasket[]>;
   constructor(private store: Store<{ baskets: IBasket[] }>) {
     this.store.select('baskets').subscribe((a) => {
       this.basketCount$ = a.length;
+      console.log(a[2]);
       this.baskets$ = a;
     });
   }

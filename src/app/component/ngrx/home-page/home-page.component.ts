@@ -32,7 +32,7 @@ export class HomePageComponent implements OnInit {
     let basket = new IBasket();
     basket.product = product;
     basket.quantity = 1;
-    this.store.dispatch({ type: '[Baskets] Add Count', basket: IBasket });
+    this.store.dispatch({ type: '[Baskets] Add Count', basket: basket });
     console.log(basket);
   }
 }
