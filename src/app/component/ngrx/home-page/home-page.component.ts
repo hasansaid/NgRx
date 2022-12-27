@@ -1,3 +1,4 @@
+import { Stores } from './../../../store/store';
 import { IBasket } from './../../../models/basket.model';
 import { Store } from '@ngrx/store';
 import { IProduct } from './../../../models/product.model';
@@ -10,7 +11,7 @@ import * as BasketAction from '../../../store/acitons/basket.action';
 })
 export class HomePageComponent implements OnInit {
   products: IProduct[] = [];
-  constructor(private store: Store) {}
+  constructor(private store: Store<Stores['baskets']>) {}
 
   ngOnInit(): void {
     this.setProducts();
@@ -32,6 +33,6 @@ export class HomePageComponent implements OnInit {
     let basket = new IBasket();
     basket.product = product;
     basket.quantity = 1;
-    this.store.dispatch(BasketAction.AddBasket({ basket: basket }));
+    this.store.dispatch(BasketAction.addBasket({ basket: basket }));
   }
 }

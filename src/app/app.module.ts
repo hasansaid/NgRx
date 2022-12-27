@@ -1,3 +1,4 @@
+import { Reducers } from './store/reducer/reducers';
 import { BasketsReducer } from './store/reducer/baskets.reducer';
 import { CounterReducer } from './store/reducer/counter.reducer';
 import { NgModule } from '@angular/core';
@@ -34,7 +35,7 @@ import { MainPageComponent } from './component/ngrx/main-page/main-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ baskets: BasketsReducer }),
+    StoreModule.forRoot(Reducers.baskets),
   ],
   providers: [],
   bootstrap: [AppComponent],
