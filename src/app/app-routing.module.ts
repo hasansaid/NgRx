@@ -1,3 +1,4 @@
+import { AddProductComponent } from './component/ngrx/add-product/add-product.component';
 import { MainPageComponent } from './component/ngrx/main-page/main-page.component';
 import { HomePageComponent } from './component/ngrx/home-page/home-page.component';
 import { MainNumberComponent } from './component/ngrx/main-number/main-number.component';
@@ -18,6 +19,8 @@ const routes: Routes = [
     children: [
       { path: '', component: HomePageComponent },
       { path: 'home-page', component: HomePageComponent },
+      { path: 'add-product', component: AddProductComponent },
+      { path: 'home-page/add-product', component: AddProductComponent },
     ],
   },
 ];
