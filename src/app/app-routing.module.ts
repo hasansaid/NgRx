@@ -1,3 +1,4 @@
+import { BasketComponent } from './component/ngrx/basket/basket.component';
 import { AddProductComponent } from './component/ngrx/add-product/add-product.component';
 import { MainPageComponent } from './component/ngrx/main-page/main-page.component';
 import { HomePageComponent } from './component/ngrx/home-page/home-page.component';
@@ -21,6 +22,8 @@ const routes: Routes = [
       { path: 'home-page', component: HomePageComponent },
       { path: 'add-product', component: AddProductComponent },
       { path: 'home-page/add-product', component: AddProductComponent },
+      { path: 'basket', component: BasketComponent },
+      { path: 'home-page/basket', component: BasketComponent },
     ],
   },
 ];

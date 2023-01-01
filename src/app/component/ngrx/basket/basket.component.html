@@ -1,0 +1,16 @@
+<div class="container">
+    <button class="btn btn-primary" routerLink="/ngrx-page">Turn Back</button>
+    <div class="row">
+        <div class="col-md-3 mt-4" *ngFor=" let basket of baskets let index= index">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="{{basket.product.imgUrl}}" class="card-img-top" style="width: 100%;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> {{basket.product.name}} </h5>
+                    <span class="card-text">Unit Price: {{basket.product.unitPrice}}</span>
+                    <p class="card-text">Quantity {{basket.quantity}}</p>
+                    <a class="btn btn-primary" (click)="removeProduct(basket.id)">Remove Basket</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

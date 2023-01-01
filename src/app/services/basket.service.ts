@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Stores } from './../store/store';
 import { Store } from '@ngrx/store';
 import { IBasket } from 'src/app/models/basket.model';
@@ -27,5 +28,13 @@ export class BasketService {
       this.baskets = data;
       callBack();
     });
+  }
+
+  getBaskets(): Observable<IBasket[]> {
+    return this.httpClient.get<IBasket[]>(this.apiUrl);
+  }
+
+  removeBasket(id: number) {
+    return this.httpClient.delete(this.apiUrl + '/' + id);
   }
 }

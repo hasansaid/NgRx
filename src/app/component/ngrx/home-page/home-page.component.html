@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-3 mt-4" *ngFor=" let product of products let index= index">
             <div class="card shadow" style="width: 18rem;">
-                <img src="{{product.imgUrl}}" class="card-img-top" alt="...">
+                <img src="{{product.imgUrl}}" class="card-img-top" style="width: 100%;" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"> {{product.name}} </h5>
                     <span class="card-text">Unit Price: {{product.unitPrice}}</span>

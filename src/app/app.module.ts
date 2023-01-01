@@ -20,6 +20,7 @@ import { HomePageComponent } from './component/ngrx/home-page/home-page.componen
 import { NavbarComponent } from './component/ngrx/navbar/navbar.component';
 import { MainPageComponent } from './component/ngrx/main-page/main-page.component';
 import { AddProductComponent } from './component/ngrx/add-product/add-product.component';
+import { BasketComponent } from './component/ngrx/basket/basket.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AddProductComponent } from './component/ngrx/add-product/add-product.co
     NavbarComponent,
     MainPageComponent,
     AddProductComponent,
+    BasketComponent,
   ],
   imports: [
     BrowserModule,

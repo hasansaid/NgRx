@@ -13,7 +13,33 @@
       "stock": 1,
       "imgUrl": "https://www.donanimhaber.com/images/images/haber/154005/src_340x191mercedes-benz-in-elektrikli-g-serisi-2024-te-geliyor.jpg",
       "id": 2
+    },
+    {
+      "name": "Computer",
+      "unitPrice": 25000,
+      "stock": 5,
+      "imgUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/12/X1004443-scaled.jpeg",
+      "id": 3
+    },
+    {
+      "name": "Headphone",
+      "unitPrice": 1200,
+      "stock": 6,
+      "imgUrl": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00BDTC/3-1653254356941.png",
+      "id": 4
     }
   ],
-  "baskets": []
+  "baskets": [
+    {
+      "id": 1,
+      "quantity": 1,
+      "product": {
+        "name": "Mercedes",
+        "unitPrice": 60000,
+        "stock": 1,
+        "imgUrl": "https://www.donanimhaber.com/images/images/haber/154005/src_340x191mercedes-benz-in-elektrikli-g-serisi-2024-te-geliyor.jpg",
+        "id": 2
+      }
+    }
+  ]
 }
