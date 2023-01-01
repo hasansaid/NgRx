@@ -1,4 +1,17 @@
 {
-  "products": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Model",
+      "unitPrice": 2500,
+      "stock": 5
+    },
+    {
+      "name": "BMW",
+      "unitPrice": 450000,
+      "stock": 2,
+      "id": 2
+    }
+  ],
   "baskets": []
 }

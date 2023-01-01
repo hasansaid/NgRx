@@ -10,6 +10,6 @@ export class ProductService {
   constructor(private httpClient: HttpClient) {}
 
   addProduct(product: IProduct) {
-    this.httpClient.post(this.apiUrl, product);
+    return this.httpClient.post(this.apiUrl, product);
   }
 }
