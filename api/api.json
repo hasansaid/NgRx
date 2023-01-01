@@ -1,15 +1,17 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Model",
-      "unitPrice": 2500,
-      "stock": 5
-    },
-    {
       "name": "BMW",
       "unitPrice": 450000,
       "stock": 2,
+      "imgUrl": "https://cdn.motor1.com/images/mgl/OooQLL/s1/2022-bmw-m3-touring.jpg",
+      "id": 1
+    },
+    {
+      "name": "Mercedes",
+      "unitPrice": 60000,
+      "stock": 1,
+      "imgUrl": "https://www.donanimhaber.com/images/images/haber/154005/src_340x191mercedes-benz-in-elektrikli-g-serisi-2024-te-geliyor.jpg",
       "id": 2
     }
   ],

@@ -1,3 +1,4 @@
+import { ProductService } from './../../../services/product.service';
 import { Stores } from './../../../store/store';
 import { IBasket } from './../../../models/basket.model';
 import { Store } from '@ngrx/store';
@@ -11,23 +12,28 @@ import * as BasketAction from '../../../store/acitons/basket.action';
 })
 export class HomePageComponent implements OnInit {
   products: IProduct[] = [];
-  constructor(private store: Store<Stores['baskets']>) {}
+  constructor(
+    private store: Store<Stores['baskets']>,
+    private productService: ProductService
+  ) {
+    this.products = productService.products;
+  }
 
   ngOnInit(): void {
-    this.setProducts();
+    // this.setProducts();
   }
 
-  setProducts() {
-    for (let i = 1; i < 101; i++) {
-      let product = new IProduct();
-      product.id = i;
-      product.name = 'Product' + ' ' + i;
-      product.unitPrice = i * 2;
-      product.stock = i * 5;
+  // setProducts() {
+  //   for (let i = 1; i < 101; i++) {
+  //     let product = new IProduct();
+  //     product.id = i;
+  //     product.name = 'Product' + ' ' + i;
+  //     product.unitPrice = i * 2;
+  //     product.stock = i * 5;
 
-      this.products.push(product);
-    }
-  }
+  //     this.products.push(product);
+  //   }
+  // }
 
   addBasket(product: IProduct) {
     let basket = new IBasket();

@@ -3,4 +3,5 @@ export class IBasket {
   id: number = 0;
   product: IProduct;
   quantity: number = 0;
+  imgUrl: string;
 }

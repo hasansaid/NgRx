@@ -29,11 +29,13 @@ export class AddProductComponent implements OnInit {
       name: ['', Validators.required],
       unitPrice: ['', Validators.required],
       stock: ['', Validators.required],
+      imgUrl: ['', Validators.required],
     });
   }
 
   addProduct() {
     this.productService.addProduct(this.productForm.value).subscribe();
-    console.log(this.productForm.value);
+    alert('Ürününüz Eklendi');
+    window.location.reload();
   }
 }
