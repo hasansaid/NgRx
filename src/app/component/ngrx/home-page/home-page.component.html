@@ -3,10 +3,9 @@
     <div class="row">
         <div class="col-md-3 mt-4" *ngFor=" let product of products let index= index">
             <div class="card shadow" style="width: 18rem;">
-                <img src="https://ffo3gv1cf3ir.merlincdn.net//SiteAssets/pasaj/crop/cg/1663938725354/1-1663938713760/1-1663938713760_600x450.png?1773534948015"
-                    class="card-img-top" alt="...">
+                <img src="{{product.imgUrl}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Product Name: {{product.name}} </h5>
+                    <h5 class="card-title"> {{product.name}} </h5>
                     <span class="card-text">Unit Price: {{product.unitPrice}}</span>
                     <p class="card-text">Total Stock: {{product.stock}}</p>
                     <a class="btn btn-primary" (click)="addBasket(product)">Add Basket</a>

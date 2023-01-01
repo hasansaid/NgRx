@@ -3,4 +3,5 @@ export class IProduct {
   name: string = '';
   unitPrice: number = 0;
   stock: number = 100;
+  imgUrl: string;
 }

@@ -8,13 +8,10 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
   apiUrl = 'http://localhost:3000/products';
-  products: IProduct[] = [];
   constructor(private httpClient: HttpClient) {}
 
-  getAllProduct() {
-    this.httpClient
-      .get<IProduct[]>(this.apiUrl)
-      .subscribe((data) => (this.products = data));
+  getAllProduct(): Observable<IProduct[]> {
+    return this.httpClient.get<IProduct[]>(this.apiUrl);
   }
 
   addProduct(product: IProduct) {
