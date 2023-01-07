@@ -46,5 +46,6 @@ export class HomePageComponent implements OnInit {
     // this.store.dispatch(BasketAction.addBasket({ basket: basket }));
 
     this.basketService.post(basket);
+    window.location.reload();
   }
 }

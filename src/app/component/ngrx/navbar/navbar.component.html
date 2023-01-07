@@ -42,11 +42,11 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Basket
-                        <span class="badge bg-danger">{{basketCount$}}</span>
+                        <span class="badge bg-danger">{{baskets.length}}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" *ngFor="let basket$ of baskets$">{{basket$.product.name}}-Adet:
-                                {{basket$.quantity}}</a>
+                        <li><a class="dropdown-item" *ngFor="let basket of baskets">{{basket.product.name}}-Adet:
+                                {{basket.quantity}}</a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">

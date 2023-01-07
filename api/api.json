@@ -29,5 +29,17 @@
       "id": 4
     }
   ],
-  "baskets": []
+  "baskets": [
+    {
+      "id": 1,
+      "quantity": 1,
+      "product": {
+        "name": "BMW",
+        "unitPrice": 450000,
+        "stock": 2,
+        "imgUrl": "https://cdn.motor1.com/images/mgl/OooQLL/s1/2022-bmw-m3-touring.jpg",
+        "id": 1
+      }
+    }
+  ]
 }
