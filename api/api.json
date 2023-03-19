@@ -31,14 +31,36 @@
   ],
   "baskets": [
     {
-      "id": 1,
+      "id": 2,
       "quantity": 1,
       "product": {
-        "name": "BMW",
-        "unitPrice": 450000,
-        "stock": 2,
-        "imgUrl": "https://cdn.motor1.com/images/mgl/OooQLL/s1/2022-bmw-m3-touring.jpg",
-        "id": 1
+        "name": "Mercedes",
+        "unitPrice": 60000,
+        "stock": 1,
+        "imgUrl": "https://www.donanimhaber.com/images/images/haber/154005/src_340x191mercedes-benz-in-elektrikli-g-serisi-2024-te-geliyor.jpg",
+        "id": 2
+      }
+    },
+    {
+      "id": 3,
+      "quantity": 1,
+      "product": {
+        "name": "Computer",
+        "unitPrice": 25000,
+        "stock": 5,
+        "imgUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/12/X1004443-scaled.jpeg",
+        "id": 3
+      }
+    },
+    {
+      "id": 5,
+      "quantity": 1,
+      "product": {
+        "name": "Headphone",
+        "unitPrice": 1200,
+        "stock": 6,
+        "imgUrl": "https://ffo3gv1cf3ir.merlincdn.net/SiteAssets/pasaj/crop/cg/00BDTC/3-1653254356941.png",
+        "id": 4
       }
     }
   ]
