@@ -1,19 +1,38 @@
-<body>
-    <h1 class="ms-5" style="text-align: center; color: red;">Count Component</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="m-5">
-                <h2>Input Output</h2>
-                <h4 class="mt-3" style="color:rgb(255, 0, 0)">COUNT: {{count}}</h4>
-                <h4 class="mt-3" style="color:rgb(0, 102, 255)">MESSAGE: {{message}}</h4>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="m-5">
-                <h2>Service</h2>
-                <h4 class="mt-3" style="color:rgb(255, 0, 0)">COUNT: {{countService.count}}</h4>
-                <h4 class="mt-3" style="color:rgb(0, 102, 255)">MESSAGE: {{countService.message}}</h4>
-            </div>
-        </div>
+<h3 class="d-flex justify-content-end mt-5 mx-4">Count Component</h3>
+<hr>
+<div class="container d-flex justify-content-center">
+    <div class="col-md-5 mx-4">
+        <table class="table table-hover">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">Input Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>COUNT: {{count}}</td>
+                </tr>
+                <tr>
+                    <td>MESSAGE: {{message}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</body>
+    <div class="col-md-5 mx-4">
+        <table class="table table-hover">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>COUNT: {{countService.count}}</td>
+                </tr>
+                <tr>
+                    <td>MESSAGE: {{countService.message}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
